@@ -16,4 +16,6 @@ class ApplicationController < ActionController::Base
   	!!current_user.admin
   end
   
+  Rails.application.config.active_record.sqlite3.represent_boolean_as_integer =true
+  
 end
